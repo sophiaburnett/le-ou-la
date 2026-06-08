@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>French Noun Gender</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="card">
+      <p class="eyebrow">French noun gender</p>
+      <h1>Masculine or feminine?</h1>
+
+      <form id="gender-form">
+        <label class="sr-only" for="noun-input">French noun</label>
+        <div class="input-row">
+          <input id="noun-input" type="text" autocomplete="off" placeholder="table" autofocus />
+          <button type="submit">Check</button>
+        </div>
+      </form>
+
+      <section id="result" class="result hidden" aria-live="polite">
+        <div id="answer" class="answer"></div>
+        <p id="micro" class="micro"></p>
+      </section>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

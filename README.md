@@ -1,6 +1,6 @@
 # French Noun Gender — v3 08/06/2026
 
-A simple browser app for checking the grammatical gender of a French noun. Made by Sophia Burnett, who despite being fluent, has often second-guessed herself when presented with an uncountable or an abstract noun.
+A simple browser app for checking the grammatical gender of a French noun. Made by Sophia Burnett, who despite being fluent, has often second-guessed herself when presented with an uncountable noun or an abstract noun. There are general principles such as -age endings being masculine and -tion endings being feminine, but sometimes it's unclear.
 
 ## What changed in v3
 
@@ -9,7 +9,7 @@ A simple browser app for checking the grammatical gender of a French noun. Made 
 - Uses lexical lookup:
   1. small built-in safety lexicon,
   2. English Wiktionary API (why is unclear)
-  3. French Wiktionnaire API.
+  3. French Wiktionnaire API (vital for function)
 
 ## How to run
 

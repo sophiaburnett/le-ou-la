@@ -1,3 +1,14 @@
+const customEntries = {
+  "espace": {
+    article: "l'espace",
+    gender: "Masculine",
+    examples: [
+      "L'espace est immense.",
+      "Les astronautes voyagent dans l'espace."
+    ]
+  }
+};
+
 const fallbackLexicon = {
   // Common words included so the app still works if the dictionary API is blocked.
   "table": ["feminine"],
@@ -132,6 +143,21 @@ function gendersFromTemplates(text) {
   }
 
   return [...genders];
+}
+
+if (customEntries[noun]) {
+  const entry = customEntries[noun];
+
+  answer.innerHTML = `
+    <div>${entry.article}</div>
+    <div>${entry.gender}</div>
+    <br>
+    <div>${entry.examples[0]}</div>
+    <div>${entry.examples[1]}</div>
+  `;
+
+  result.classList.remove("hidden");
+  return;
 }
 
 async function lookupEnglishWiktionary(noun) {

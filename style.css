@@ -123,3 +123,9 @@ button:hover {
     width: 100%;
   }
 }
+.small-result {
+  font-size: 1.2rem;
+  letter-spacing: normal;
+  margin-top: 12px;
+  font-weight: 600;
+}

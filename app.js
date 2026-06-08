@@ -5,7 +5,8 @@ const customEntries = {
     examples: [
       "L'espace est immense.",
       "Les astronautes voyagent dans l'espace."
-    ]
+    ],
+    note: "Also: une espace = typographic space."
   }
 };
 

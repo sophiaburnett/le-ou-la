@@ -1,15 +1,3 @@
-const customEntries = {
-  "espace": {
-    article: "l'espace",
-    gender: "Masculine",
-    examples: [
-      "L'espace est immense.",
-      "Les astronautes voyagent dans l'espace."
-    ],
-    note: "Also: une espace = typographic space."
-  }
-};
-
 const fallbackLexicon = {
   // Common words included so the app still works if the dictionary API is blocked.
   "table": ["feminine"],

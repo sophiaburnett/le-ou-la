@@ -272,10 +272,29 @@ form.addEventListener("submit", async (event) => {
     return;
   }
 
-  render([], "Checking…");
+ render([], "Checking…");
 
-  try {
-    const { genders, source } = await lookupGender(noun);
+if (customEntries[noun]) {
+  const entry = customEntries[noun];
+
+  result.classList.remove("hidden");
+  answer.innerHTML = `
+    <div>${entry.article}</div>
+    <div class="small-result">${entry.gender}</div>
+  `;
+
+  micro.innerHTML = `
+    <div>${entry.examples[0]}</div>
+    <div>${entry.examples[1]}</div>
+    <br>
+    <div>${entry.note}</div>
+  `;
+
+  return;
+}
+
+try {
+  const { genders, source } = await lookupGender(noun);
 
     if (genders.length) {
       render(genders, source);
